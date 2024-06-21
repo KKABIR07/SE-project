@@ -1,102 +1,49 @@
-.content-info {
-  background: #f9f9f9;
-  padding: 40px 0;
-  background-size: cover!important;
-  background-position: top center!important;
-  background-repeat: no-repeat!important;
-  position: relative;
- padding-bottom:100px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-table {
+#drop{
+  position: fixed;
+  top: 10.5vh;
+  left: 105vh;
+}
+
+#headimg{
+  background-image: url(../public/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
-  background: #fff;
-  border: 1px solid #dedede;
+  background-attachment: fixed ;
+ 
 }
 
-table thead tr th {
-  padding: 20px;
-  border: 1px solid #dedede;
-  color: #000;
+.logo{
+  background: url(../public/logo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: mymove 1.5s linear infinite;
 }
 
-table.table-striped tbody tr:nth-of-type(odd) {
-  background: #f9f9f9;
+@keyframes mymove {
+   0%{
+    transform: translateY(-4px);
+  }50%{
+    transform: translateY(4px);
+  }100%{
+    transform: translateY(-4px);
+  } 
 }
 
-table.result-point tr td.number {
-  width: 100px;
-  position: relative;
-} 
-
-.text-left {
-  text-align: left!important;
-}
-
-table tr td {
-  padding: 10px 20px;
-  border: 1px solid #dedede;
-}
-table.result-point tr td .fa.fa-caret-up {
-  color: green;
-}
-
-table.result-point tr td .fa {
-  font-size: 20px;
-  position: absolute;
-  right: 20px;
-}
-
-table tr td {
-  padding: 10px 40px;
-  border: 1px solid #dedede;
-}
-
-table tr td img {
-  max-width: 32px;
-  float: left;
-  margin-right: 11px;
-  margin-top: 1px;
-  border: 1px solid #dedede;
-}
-
-body{
-  background-color: #25274d;
-}
-.contact{
-  padding: 4%;
-  height: 400px;
-}
-.col-md-3{
-  background: #ff9b00;
-  padding: 4%;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-.contact-info{
-  margin-top:10%;
-}
-.contact-info img{
-  margin-bottom: 15%;
-}
-.contact-info h2{
-  margin-bottom: 10%;
-}
-.col-md-9{
-  background: #fff;
-  padding: 3%;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-.contact-form label{
-  font-weight:600;
-}
-.contact-form button{
-  background: #25274d;
-  color: #fff;
-  font-weight: 600;
-  width: 25%;
-}
-.contact-form button:focus{
-  box-shadow:none;
+.tournament{
+  background-image: url(../public/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed ;
+ 
 }
